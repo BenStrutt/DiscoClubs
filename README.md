@@ -1,0 +1,1 @@
+A web app for discovering and hosting discussion clubs based on media formats (books, movies, music, etc.)

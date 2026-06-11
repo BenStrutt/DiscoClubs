@@ -1,0 +1,12 @@
+
+import { PrismaPg } from '@prisma/adapter-pg';
+import { PrismaClient } from '@/generated/prisma/client';
+
+const adapter = new PrismaPg({
+  connectionString: process.env.DIRECT_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
+});
+
+export const prisma = new PrismaClient({ adapter });
